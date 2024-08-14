@@ -1,0 +1,450 @@
+/*
+<!-- A3-->
+<!-- Neelendra Mishra-->
+<!-- Student ID 40224310-->
+<!-- SOEN 287 WEB PROGRAMMING -->
+*/
+
+
+                                                                /*START OF THE CODE*/
+
+
+/*  Main Body */
+.body {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Header Section*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 1;
+  height: 15%;
+  width: 100%;
+  padding: 0;
+  background-color: #254336;
+}
+.header table {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.headerImage {
+  max-width: 100%;
+  height: auto;
+}
+.headerTitle {
+  margin: 0;
+  color: #E6EAE0;
+  font-size: 2.75rem;
+  line-height: 1;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.contentHeader{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+/* Side Menu */
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 15%;
+  height: 80%;
+  width: 20%;
+  background-color: #6B8A7A;
+  overflow-y: auto;
+}
+.sideMenu p {
+  align-self: flex-start;
+  padding-left: 10%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.sideMenu ul {
+  list-style-type: none;
+}
+.sideMenu a {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: #B6C2A2;
+  font-size: 17px;
+  border-radius: 15px;
+}
+.sideMenu a:hover {
+  color: #E6EAE0;
+  background-color: #9EAD84;
+  
+}
+
+
+/* Content Section */
+.content {
+  position: absolute;
+  top: 15%;
+  height: 80%;
+  font-size: 18px ;
+  left: 20%;
+  width: 80%;
+  background-color: #B7B597;
+  overflow-y: auto;
+}
+.contentHeader {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #353D28;
+  font-weight: bold;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.contentText {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #353D28;
+  font-size: 20px;
+}
+
+.contentList {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #353D28;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.contentList li {
+  padding-bottom: 1%;
+}
+.contentList a {
+  text-decoration: none;
+  color: #353D28;
+}
+.contentList a:hover {
+  color: #505C3C;
+}
+
+.contentImageFloatRight {
+  float: right;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 35%;
+}
+
+.content button {
+  border: none;
+  padding: 10px;
+  margin-left: 5%;
+  color: #353D28;
+  background-color: #B6C2A2;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.content button:hover {
+  background-color: #9EAD84;
+}
+.formDropdown {
+  margin-left: 5%;
+  color: #353D28;
+}
+.formTextInput {
+  margin-left: 5%;
+}
+#findForm {
+  height: 130%;
+}
+#giveForm {
+  height: 165%;
+}
+
+
+/* Footer Section */
+.footer {
+  position: fixed;
+  z-index: 3;
+  bottom: 0%;
+  height: 5%;
+  width: 100%;
+  background-color: #597445;
+  text-align: center;
+}
+.footer p {
+  color: #E6EAE0;
+  font-size: 10px;
+}
+.footer a {
+  color: #E6EAE0;
+  text-decoration: underline;
+  font-size: 17px;
+}
+.footer a:hover {
+  color: #B6C2A2;
+}
+
+
+/*changes in pets page */
+
+.headerSubtitle {
+  margin: 0;
+  padding: 0;
+  color: #B6C2A2;
+  font-size: 1.25rem;
+  vertical-align: bottom;
+}
+.headerDateTime {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 1rem;
+  text-align: right;
+}
+.contentImageRow {
+  display: flex;
+  align-content: space-evenly;
+  height: 2%;
+  width: 100%;
+  margin-bottom: 30%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.contentImageCaptioned2 {
+  position: absolute;
+  left: 28.5%;
+  width: 18.75%;
+  text-align: center;
+}
+.contentImageCaptioned3 {
+  position: absolute;
+  left: 52.5%;
+  width: 18.75%;
+  text-align: center;
+}
+.contentImageCaptioned4 {
+  position: absolute;
+  left: 77.25%;
+  width: 18.75%;
+  text-align: center;
+}
+.contentImageCaptioned img {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.contentImageCaptioned a {
+  display: block;
+  padding: 5%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #353D28;
+}
+.contentImageCaptioned a:hover {
+  background-color: #CED6C1;
+}
+.content button {
+  border: none;
+  padding: 10px;
+  margin-left: 5%;
+  color: #353D28;
+  background-color: #B6C2A2;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*  Here is the code to make the website responsive for tablets */
+
+/*Header Section*/
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1px;
+  }
+
+  .headerImage {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 1px;
+    margin-top: 7px;
+    
+  }
+
+  .headerTitle {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-left: 0;
+    text-align: center;
+ 
+  }
+
+  /*Side Menu Section*/
+  .sideMenu {
+    position: static;
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+    
+    
+  }
+
+  .sideMenu p, .sideMenu a {
+    font-size: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /*Content Section*/
+  .content {
+    position: static;
+    width: 100%;
+    padding: 10px;
+  
+  }
+
+  .contentImageFloatRight {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+
+/*Footer Section*/
+  .footer {
+    position: static;
+    height: auto;
+    padding: 10px;
+
+  }
+
+  .footer p, .footer a {
+    font-size: 14px;
+  }
+}
+
+
+/*  Here is the code to make the website responsive for SmartPhones */
+
+/*Header Section*/
+@media (max-width: 480px) {
+  .headerTitle {
+    font-size: 1.5rem;
+    text-align: center;
+   
+  }
+
+  /*Side Menu Section*/
+  .sideMenu p, .sideMenu a {
+    font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /*content Section*/
+  .contentText {
+    font-size: 16px;
+  }
+
+  .contentHeader {
+    font-size: 24px;
+  }
+}
+
+
+
+/* Responsive for pets page  */
+@media (max-width: 768px) {
+  .headerSubtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .headerDateTime {
+    font-size: 0.875rem;
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .contentImageRow {
+    flex-direction: column;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    align-items: center;
+  }
+
+  .contentImageCaptioned2,
+  .contentImageCaptioned3,
+  .contentImageCaptioned4 {
+    position: static;
+    width: 80%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .contentImageCaptioned img {
+    margin-bottom: 10px;
+  }
+
+  .content button {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+/* Responsive for Smartphones */
+@media (max-width: 480px) {
+  .headerSubtitle {
+    font-size: 0.875rem;
+  }
+
+  .headerDateTime {
+    font-size: 0.75rem;
+    margin-top: 5px;
+  }
+
+  .contentImageRow {
+    flex-direction: column;
+    margin-bottom: 20%;
+    margin-top: 10%;
+  }
+
+  .contentImageCaptioned2,
+  .contentImageCaptioned3,
+  .contentImageCaptioned4 {
+    width: 90%;
+  }
+
+  .contentImageCaptioned a {
+    font-size: 16px;
+    padding: 10%;
+  }
+
+  .content button {
+    font-size: 0.875rem;
+    padding: 8px;
+  }
+}
+                                                   /*END OF THE CODE*/                                            

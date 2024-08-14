@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Home - The Meow-sic Vet</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="icon" href="images/fav.jpg">
+    </head>
+  
+    <body>
+      <div class="body">
+  
+        <!-- HEADER -->
+        <div class="header">
+      <%- include('header') %>
+    </div>
+    <!-- Content for Home page goes here -->
+     <!-- SIDE MENU -->
+     <div class="sideMenu">
+        <p>Quicks Links</p>
+        <a href="/">Home</a>
+        <a href="/pets">Browse Available Pets</a>
+        <a href="/find">Find a Dog/Cat</a>
+        <a href="/dog">Dog Care</a>
+        <a href="/cat">Cat Care</a>
+        <a href="/give">Have a pet to give away?</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+      </div>
+      <div class="content">
+        <p class="contentHeader">Sign-In</p>
+          <% if (locals.errorMessage) { %>
+              <p style="color: #2b9348; font-size: 30px; padding-left: 15px;"><%= errorMessage %></p>
+          <% } %>
+          <form action="/login" method="post">
+            <label for="username" style="padding-left: 15px">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password" style="padding-left: 15px">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+    
+      <div class="footer">
+        <%- include('footer') %>
+      </div>
+    </div>
+    <script src="/js/_script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,125 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Home - The Meow-sic Vet</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="icon" href="images/fav.jpg">
+    </head>
+  
+    <body>
+      <div class="body">
+  
+        <!-- HEADER -->
+        <div class="header">
+      <%- include('header') %>
+    </div>
+    <!-- Content for Home page goes here -->
+     <!-- SIDE MENU -->
+     <div class="sideMenu">
+        <p>Quicks Links</p>
+        <a href="/">Home</a>
+        <a href="/pets">Browse Available Pets</a>
+        <a href="/find">Find a Dog/Cat</a>
+        <a href="/dog">Dog Care</a>
+        <a href="/cat">Cat Care</a>
+        <a href="/give">Have a pet to give away?</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
+      </div>
+       <!-- CONTENT -->
+       <div class="content" id="findForm">
+        <p class="contentHeader">Find Your Cute Cat or Dog</p>
+        <img class="contentImageFloatRight" src="images/form-page.jpg">
+        <form action="">
+
+          <!-- QUESTION 1 -->
+          <label class="contentText">Are you interested in adopting a dog or cat?</label>
+          <br>
+          <br>
+          <input type="radio" class="contentText" id="findPetDog" name="findPet" value="dog" required>
+          <label for="findPetDog">Dog</label>
+          <br>
+          <input type="radio" class="contentText" id="findPetCat" name="findPet" value="cat">
+          <label for="findPetCat">Cat</label>
+          <br>
+          <br>
+          <br>
+
+          <!-- QUESTION 2 -->
+          <label class="contentText">Do you have a breed preference?</label>
+          <br>
+          <br>
+          <input type="radio" class="contentText" id="findBreedInput" name="findBreed" value="input" onclick="findEmpty()" required>
+          <label for="findBreedInput">Please specify: </label><input type="text" placeholder="if yes, type here">
+          <br>
+          <input type="radio" class="contentText" id="findBreedNone" name="findBreed" value="none" onclick="findEmpty()">
+          <label for="findBreedNone">No preference</label>
+          <br>
+          <br>
+          <br>
+
+          <!-- QUESTION 3 -->
+          <label class="contentText">Are you looking for a specific age preference?</label>
+          <br>
+          <br>
+          <select name="findAge" class="formDropdown" required>
+            <option value="" selected hidden disabled>Select here.</option>
+            <option value="0to3">None</option>
+            <option value="0to3">0 to 2 years</option>
+            <option value="4to7">3 to 5 years</option>
+            <option value="8to11">6 to 10 years</option>
+            <option value="12to15">11 to 15 years or higher</option>
+          </select>
+          <br>
+          <br>
+          <br>
+
+          <!-- QUESTION 4 -->
+          <label class="contentText">Do you have a preference regarding gender?</label>
+          <br>
+          <br>
+          <input type="radio" class="contentText" id="findGenderMale" name="findGender" value="male" required>
+          <label for="findGenderMale">Male</label>
+          <br>
+          <input type="radio" class="contentText" id="findGenderFemale" name="findGender" value="female">
+          <label for="findGenderFemale">Female</label>
+          <br>
+          <input type="radio" class="contentText" id="findGenderNone" name="findGender" value="none">
+          <label for="findGenderNone">No preference</label>
+          <br>
+          <br>
+          <br>
+
+          <!-- QUESTION 5 -->
+          <label class="contentText">Do you have any particular needs or preferences for your pet?</label>
+          <br>
+          <br>
+          <input type="checkbox" class="contentText" id="findRequirementDogs" name="findRequirement" value="dogs" required>
+          <label for="findRequirementDogs">Dog-friendly</label>
+          <br>
+          <input type="checkbox" class="contentText" id="findRequirementCats" name="findRequirement" value="cats">
+          <label for="findRequirementCats">Cat-friendly</label>
+          <br>
+          <input type="checkbox" class="contentText" id="findRequirementChildren" name="findRequirement" value="children">
+          <label for="findRequirementChildren">Kid-friendly</label>
+          <br>
+          <br>
+          <br>
+
+          <!-- BUTTONS -->
+          <button type="submit" id="submit" name="submit">Submit</button>
+          <button type="reset" id="reset" name="reset">Reset</button>
+        </form>
+      </div>
+      
+      <!-- FOOTER -->
+      <div class="footer">
+        <%- include('footer') %>
+      </div>
+    </div>
+    <script src="/js/_script.js"></script>
+  </body>
+  </html>

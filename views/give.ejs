@@ -1,0 +1,158 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Home - The Meow-sic Vet</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="icon" href="images/fav.jpg">
+    </head>
+  
+    <body>
+      <div class="body">
+  
+        <!-- HEADER -->
+        <div class="header">
+      <%- include('header') %>
+    </div>
+    <!-- Content for Home page goes here -->
+     <!-- SIDE MENU -->
+     <div class="sideMenu">
+        <p>Quicks Links</p>
+        <a href="/">Home</a>
+        <a href="/pets">Browse Available Pets</a>
+        <a href="/find">Find a Dog/Cat</a>
+        <a href="/dog">Dog Care</a>
+        <a href="/cat">Cat Care</a>
+        <a href="/give">Have a pet to give away?</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/logout">Logout</a> 
+
+      </div>
+       <!-- CONTENT -->
+       <div class="content">
+        <p class="contentHeader">Complete the form and bring home your new furry friend!</p>
+        <% if (locals.errorMessage) { %>
+          <p style="color: red;"><%= errorMessage %></p>
+        <% } %>
+        <img class="contentImageFloatRight" src="images/give-away.jpg">
+        <form action="/register_pet" method="post">
+           <!-- QUESTION 1 -->
+           <label class="contentText">Is the animal you're referring to a dog or a cat?</label>
+           <br>
+           <br>
+           <input type="radio" class="contentText" id="givePetDog" name="petType" name="givePet" value="dog" required>
+           <label for="givePetDog">Dog</label>
+           <br>
+           <input type="radio" class="contentText" id="givePetCat" name="petType"  name="givePet" value="cat">
+           <label for="givePetCat">Cat</label>
+           <br>
+           <br>
+           <br>
+ 
+           <!-- QUESTION 2 -->
+           <label class="contentText">Which breed do they belong to?</label>
+           <br>
+           <br>
+           <select name="breed" class="formDropdown" required>
+            <option value="" selected hidden disabled>Select here.</option>
+            <option value="French Bulldog">French Bulldog</option>
+            <option value="Labrador Retriever">Labrador Retriever</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="German Shepherd Dog">German Shepherd Dog</option>
+            <option value="American Curl"> American Curl</option>
+            <option value="Suki"> Suki</option>
+            <option value="other"> other</option>
+          </select>
+          <br><br>
+          <br>
+           <!-- QUESTION 3 -->
+           <label class="contentText">What is their age range?</label>
+           <br>
+           <br>
+           <select name = "age" name="giveAge" class="formDropdown" required>
+             <option value="" selected hidden disabled>Select here.</option>
+             <option value="between 0 to 3 years">None</option>
+             <option value="between 0 to 2 years">0 to 2 years</option>
+             <option value="between 3 to 5 years">3 to 5 years</option>
+             <option value="between 6 to 10 years">6 to 10 years</option>
+             <option value="between 11 to 15 years">11 to 15 years or higher</option>
+           </select>
+           <br>
+           <br>
+           <br>
+ 
+           <!-- QUESTION 4 -->
+           <label class="contentText">What gender are they?</label>
+           <br>
+           <br>
+           <input type="radio" class="contentText" id="giveGenderMale" name="gender" name="giveGender" value="male"required>
+           <label for="giveGenderMale">Male</label>
+           <br>
+           <input type="radio" class="contentText" id="giveGenderFemale" name="gender" name="giveGender" value="female">
+           <label for="giveGenderFemale">Female</label>
+           <br>
+           <input type="radio" class="contentText" id="giveGenderNone" name="gender" name="giveGender" value="none">
+           <label for="giveGenderNone">No preference</label>
+           <br>
+           <br>
+           <br>
+ 
+           <!-- QUESTION 5 -->
+           <label class="contentText">Do they possess any of the following traits?</label>
+           <br>
+           <br>
+           <input type="checkbox" class="contentText" id="giveCharacteristicDogs" name = "notes" name="giveCharacteristic" value="dogs" >
+           <label for="giveCharacteristicDogs">Dog-friendly</label>
+           <br>
+           <input type="checkbox" class="contentText" id="giveCharacteristicCats" name = "notes" name="giveCharacteristic" value="cats">
+           <label for="giveCharacteristicCats">Cat-friendly</label>
+           <br>
+           <input type="checkbox" class="contentText" id="giveCharacteristicChildren" name = "notes" name="giveCharacteristic" value="children" required>
+           <label for="giveCharacteristicChildren">Kid-friendly</label>
+           <br>
+           <br>
+           <br>
+ 
+           <!-- COMMENT AREA -->
+           <label class="contentText">Any other details feel free to add here .</label>
+           <br>
+           <br>
+           <input class="formTextInput" name = "measures" type="text" placeholder="If yes, type here." required>
+           <br>
+           <br>
+           <br>
+ 
+           <!-- INFORMATION AREA -->
+           <form id="giveAwayForm" action="" method="post">
+             <label class="contentText">Please share your name and email address below.</label>
+             <br>
+             <br>
+             <label class="contentText contentTextSmall">Name: </label>
+             <input type="text" id="userName"  name = "nameuser" placeholder="John Morgan" required>
+             <br>
+             <label class="contentText contentTextSmall">Email: </label>
+             <input type="email" id="userEmail" name = "pass" placeholder="xyz@gmail.com" required>
+             <br>
+             <span id="errorMessage" style="color: red;"></span>
+             <br>
+             <br>
+             <br>
+           
+             <!-- BUTTONS -->
+             <button type="submit" id="submit" name="submit">Submit</button>
+             <button type="reset" id="reset" name="reset">Reset</button>
+        </form>
+      </div>
+  
+  
+  
+      <!--footer-->
+      <div class="footer">
+        <%- include('footer') %>
+      </div>
+    </div>
+    <script src="/js/_script.js"></script>
+  </body>
+  </html>

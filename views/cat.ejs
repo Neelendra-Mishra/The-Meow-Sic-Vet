@@ -1,0 +1,60 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Home - The Meow-sic Vet</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="icon" href="images/fav.jpg">
+    </head>
+  
+    <body>
+      <div class="body">
+  
+        <!-- HEADER -->
+        <div class="header">
+      <%- include('header') %>
+    </div>
+    <!-- Content for Home page goes here -->
+     <!-- SIDE MENU -->
+     <div class="sideMenu">
+        <p>Quicks Links</p>
+        <a href="/">Home</a>
+        <a href="/pets">Browse Available Pets</a>
+        <a href="/find">Find a Dog/Cat</a>
+        <a href="/dog">Dog Care</a>
+        <a href="/cat">Cat Care</a>
+        <a href="/give">Have a pet to give away?</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
+      </div>
+       <!-- CONTENT -->
+       <div class="content">
+        <p class="contentHeader">Nurturing a Cat</p>
+        <img class="contentImageFloatRight" src="images/cat-page.jpg">
+        <p class="contentText">
+          <p class="contentText">
+            Explore these essential steps, recommended by our professional doctors, for successfully raising your new family member!
+          </p>
+          <ul class="contentList">
+            <li>Train your cat to use a scratching post</li>
+            <li>Schedule regular veterinary visits</li>
+            <li>Make sure your cat always has a place to potty</li>
+            <li>Keep the litter box clean</li>
+            <li>Provide fresh water 24/7</li>
+            <li>Consider spaying or neutering your cat</li>
+            
+            <!--Creating a link for real site from where information was taken-->
+            <li><a href="https://www.petsafe.com/blog/cats-101-basic-health-care-tips-to-keep-your-cat-healthy/">Click <i>here</i> to discover more expert advice on cat care.</a></li>
+          </ul>
+      </div>
+      
+      <!-- FOOTER -->
+      <div class="footer">
+        <%- include('footer') %>
+      </div>
+    </div>
+    <script src="/js/_script.js"></script>
+  </body>
+  </html>

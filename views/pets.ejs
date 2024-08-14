@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Home - The Meow-sic Vet</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="icon" href="images/fav.jpg">
+    </head>
+  
+    <body>
+      <div class="body">
+  
+        <!-- HEADER -->
+        <div class="header">
+      <%- include('header') %>
+    </div>
+    <!-- Content for Home page goes here -->
+     <!-- SIDE MENU -->
+     <div class="sideMenu">
+        <p>Quicks Links</p>
+        <a href="/">Home</a>
+        <a href="/pets">Browse Available Pets</a>
+        <a href="/find">Find a Dog/Cat</a>
+        <a href="/dog">Dog Care</a>
+        <a href="/cat">Cat Care</a>
+        <a href="/give">Have a pet to give away?</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
+      </div>
+      <!--main content-->
+       <!-- CONTENT -->
+       <div class="content" id="browseMenu">
+        <p class="contentHeader">Browse Available Pets</p>
+        <!-- ROW 1 -->
+        <div class="contentImageRow">
+          <div class="contentImageCaptioned1 contentImageCaptioned">
+            <img class="contentImageProfile" src="images/b.jpg" height="140" style="margin-left: 20px;" alt="image of cat"> <!--background image-->
+            <p class="contentText" style="margin-left: 20px;">
+              Name: Oliver, Cat<br>
+              Personality: Playful<br>
+              Breed: Suki<br>
+              Age: 2 months<br>
+              Gender: Female<br>
+              Vaccination: Good
+            </p>
+            <button class="browseInterested" style="margin-left: 20px; ">Interested</button>
+          </div>
+          <div class="contentImageCaptioned2 contentImageCaptioned">
+            <img src="images/browse1.jpg" height="140" alt="image of dog" >
+            <p class="contentText">
+              Name: Tobby, Puppy<br>
+              Personality: curious<br>
+              Breed: Golden Retriever<br>
+              Age: 3 years<br>
+              Gender: Male<br>
+              Vaccination: Good
+            </p>
+            <button class="browseInterested">Interested</button>
+          </div>
+          <div class="contentImageCaptioned3 contentImageCaptioned">
+            <img src="images/browse2.jpg" height="140" alt="image of dog">
+            <p class="contentText">
+              Name: Winnie, Puppy<br>
+              Personality: Playful<br>
+              Breed: Maltipoo<br>
+              Age: 5 years<br>
+              Gender: Male<br>
+              Vaccination: Good
+            </p>
+            <button class="browseInterested">Interested</button>
+          </div>
+          <div class="contentImageCaptioned4 contentImageCaptioned">
+            <img src="images/browse3.jpg" height="140" alt="image of cat">
+            <p class="contentText">
+              Name: Misty, cat<br>
+              Personality: Playful<br>
+              Breed: American Curl<br>
+              Age: 10 Months<br>
+              Gender: Femlae<br>
+              Vaccination: Good
+            </p>
+            <button class="browseInterested">Interested</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <%- include('footer') %>
+      </div>
+    </div>
+    <script src="/js/_script.js"></script>
+  </body>
+  </html>
